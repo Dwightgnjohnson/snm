@@ -1,0 +1,58 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+
+ @font-face {
+     font-family: 'libbyregular';
+     src: url('LibbyRegular-webfont.eot');
+     src: url('LibbyRegular-webfont.eot?#iefix') format('embedded-opentype'),
+          url('LibbyRegular-webfont.woff2') format('woff2'),
+          url('LibbyRegular-webfont.woff') format('woff'),
+          url('LibbyRegular-webfont.ttf') format('truetype'),
+          url('LibbyRegular-webfont.svg#libbyregular') format('svg');
+     font-weight: normal;
+     font-style: normal;
+
+ }
+
+ @font-face {
+     font-family: 'libbybold';
+     src: url('LibbyBold-webfont.eot');
+     src: url('LibbyBold-webfont.eot?#iefix') format('embedded-opentype'),
+          url('LibbyBold-webfont.woff2') format('woff2'),
+          url('LibbyBold-webfont.woff') format('woff'),
+          url('LibbyBold-webfont.ttf') format('truetype'),
+          url('LibbyBold-webfont.svg#libbybold') format('svg');
+     font-weight: normal;
+     font-style: normal;
+
+ }
+$white:white;
+$gray-base: #373D47;
+$brand-primary: lighten(#40acf5, 6.5%);
+$brand-success: #3a719a;
+$brand-info: #f78941;
+$brand-warning: #BD8075;
+$brand-danger: #d99952;
+$body-bg: #F5F5DC;
+
+
+ .test {border:thin solid red;}
+ h1,h2,h3,h4,h5,h6 {font-family: 'libbybold', sans-serif;padding-top:20px;color:white;}
+body {font-family: 'libbyregular', sans-serif;padding-top:20px;background:url("./1200snmbglogo.jpg")  fixed 50% / cover;background-color:#2F7BDF;color:white;}
+ .bg1 {background-color: $brand-primary;color:$white;}
+ .bg2 {background-color: $brand-success;color:$white}
+ .bg3 {background-color: $brand-info;color:white}
+ .bg3:hover {color:white;}
