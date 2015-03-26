@@ -39,20 +39,34 @@
      font-style: normal;
 
  }
+ @media (min-width: 1200px) {
+  .container {
+    width: 970px;
+  }
+}
 $white:white;
 $gray-base: #373D47;
 $brand-primary: lighten(#40acf5, 6.5%);
 $brand-success: #3a719a;
-$brand-info: #f78941;
+$brand-info: #FAE90E;
 $brand-warning: #BD8075;
 $brand-danger: #d99952;
 $body-bg: #F5F5DC;
 
 
  .test {border:thin solid red;}
- h1,h2,h3,h4,h5,h6 {font-family: 'libbybold', sans-serif;padding-top:20px;color:white;}
-body {font-family: 'libbyregular', sans-serif;padding-top:20px;background:url("http://sierranevadamarketing.com/1200snmbglogo.jpg")  fixed 50% / cover;background-color:#2F7BDF;color:white;}
- .bg1 {background-color: $brand-primary;color:$white;}
+ h1,h2,h3,h4,h5,h6 {font-family: 'libbybold', sans-serif;line-height: 150%;color:white;}
+ h3{margin-top:45px}
+body {font-family: sans-serif;padding-top:20px;background:url("http://sierranevadamarketing.com/1200snmbglogo.jpg")  fixed 50% / cover;background-color:#2F7BDF;color:white;}
+ .bg1 {background: rgb(61, 68, 82); /* Fall-back for browsers that don't
+                                    support rgba */
+    background: rgba(61, 68, 82, .8);color:$white;
+   -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;
+    border-radius: 10px; /* future proofing */
+-khtml-border-radius: 10px; /* for old Konqueror browsers */
+}
  .bg2 {background-color: $brand-success;color:$white}
  .bg3 {background-color: $brand-info;color:white}
  .bg3:hover {color:white;}
+ .logo {padding:0 15%;margin:10% auto;}
